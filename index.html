@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#a789d4">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title> Thomas Gunawan</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Thomas Gunawan</a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item ">
+                        <a href="#home" class="nav__link">
+                            <i class='bx bx-home'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item ">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-message-square-dots'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--=============== theme change button ===============-->
+            <i class='bx bx-moon change-theme change-theme-button' id="theme-button"></i>
+
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting">Hello, I'm</span>
+                    <h1 class="home__name">Thomas Gunawan Sardjono</h1>
+                    <h3 class="home__education">Senior Quality Assurance Automation</h3>
+
+                    <div class="home__button">
+                        <a download="" href="assets/pdf/hailee-Cv.pdf" class="button button--ghost">
+                            Download CV
+                        </a>
+
+                        <a href="#about" class="button">About</a>
+                    </div>
+                </div>
+
+                <div class="home__handle">
+                    <img src="assets/img/profile.png" alt="" class="home__img" width="300" height="300">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/thomasgunawannn/" target="_blank" class="home__social-link">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/tmgnw" target="_blank" class="home__social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <!--<a href="#" target="_blank" class="home__social-link">
+                        <i class='bx bxl-dribbble'></i>
+                    </a>-->
+                </div>
+
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scroll-icon'></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <span class="section__subtitle">My Intro</span>
+            <h2 class="section__title">About Me</h2>
+
+            <div class="about__container container grid">
+                <img src="assets/img/bout.png" alt="" class="about__img">
+
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class='bx bx-award about__icon'></i>
+                            <h3 class="about__title">Experience</h3>
+                            <span class="about__subtitle"><span id="yearDiff"></span> Years Working</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-briefcase-alt about__icon'></i>
+                            <h3 class="about__title">Completed</h3>
+                            <span class="about__subtitle"><span id="thomasProject"></span>+ Projects</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-support about__icon'></i>
+                            <h3 class="about__title">Support</h3>
+                            <span class="about__subtitle">Online 24/7</span>
+                        </div>
+                    </div>
+
+                    <p class="about__description" style="text-align: justify;">
+                        Senior Software Quality Assurance Automation with over <span id="yearDiff"></span> years of experience in the banking industry.</br>
+                        Highly skilled, innovative, and an excellent communicator within team environments.</br>
+                        With a bachelor's degree in Informatics Engineering, I bring comprehensive expertise to every project I undertake.
+                    </p>
+
+                    <a href="#contact" class="button about__button-contact">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">My Abilities</span>
+            <h2 class="section__title">My Experience</h2>
+            
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <div class="serv">
+                        <h3 class="services__title">Quality<br> Assurance Automation</h3>
+                        <span class="services__button">
+                            See More <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
+                    </div>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <h3 class="services__modal-title">Quality Assurance Automation</h3></br>
+                            <h5 class="services__modal-title">PT. BANK NEGARA INDONESIA</br>(Persero) Tbk.</h5>
+
+                            <h5 class="services__modal-title" style="text-align: center;">COE’s Testing Management Services</br>Officer Assistant Manager</h5>
+
+                            <p class="services__modal-description">
+                                June 2023 – Present
+                            </p>
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Develop and maintain a comprehensive automation testing strategy, including test automation frameworks and tools
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Manage and mentor a team of 18 automation engineers to ensure efficient and effective testing
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Collaborate with development teams to ensure software is built with automation testing in mind
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Design, develop, and execute automated tests to ensure software meets specified requirements
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Analyze test results and provide regular progress updates to stakeholders
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Develop and maintain test data and test environments to support automation testing
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Developed and implemented test automation process, resulting in a 150% increase in testing execution speed.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Stay up-to-date with new software testing technologies and tools and recommend appropriate solutions for the team to implement
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Continuously enhanced testing standards and procedures to optimize process efficiency and effectiveness.
+                                    </p>
+                                </li>
+                            </ul>
+
+                            </br></br><h5 class="services__modal-title" style="text-align: center;">Software Quality Assurance Automation</br>Assistant Manager</h5>
+
+                            <p class="services__modal-description">
+                                March 2023 – May 2023
+                            </p>
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Develop and maintain a comprehensive automation testing strategy, including test automation frameworks and tools
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Manage and mentor a team of 16 automation engineers to ensure efficient and effective testing
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Collaborate with development teams to ensure software is built with automation testing in mind
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Design, develop, and execute automated tests to ensure software meets specified requirements
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Analyze test results and provide regular progress updates to stakeholders
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Develop and maintain test data and test environments to support automation testing
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Stay up-to-date with new software testing technologies and tools and recommend appropriate solutions for the team to implement
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Continuously evaluate and improve the automation testing process to ensure efficient and effective testing practices
+                                    </p>
+                                </li>
+                            </ul>
+
+                            </br></br><h5 class="services__modal-title" style="text-align: center;">Software Quality Assurance Automation</h5>
+
+                            <p class="services__modal-description">
+                                March 2021 – February 2023
+                            </p>
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Oversaw the execution of manual tests for API, mobile, and web-based applications, ensuring thorough validation of software functionalities and compatibility.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Developed and maintained test documentation, including test plans, test cases, and test reports, providing clear insights into testing progress and results
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Led and mentored a team of testers to ensure the delivery of high-quality software solutions
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Managing resources for testing activity
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Prioritizing and scheduling testing activities in regards to source code dependency
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Participated in project meetings, offering insights on testability, potential risks, and testing scope to drive successful project outcomes.
+                                    </p>
+                                </li>
+                            </ul>
+
+                            </br></br>
+                            <h5 class="services__modal-title">PT. Mitra Integrasi Informatika</h5>
+                            <h5 class="services__modal-title" style="text-align: center;">Quality Assurance</h5>
+
+                            <p class="services__modal-description">
+                                March 2021 – February 2023
+                            </p>
+
+                            <p class="services__modal-info">
+                                Site PT. BANK NEGARA INDONESIA Pejompongan
+                            </p>
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Developing Automation using UFT – web and mobile based applications.
+                                    </p>
+                                </li>
+                            </ul></br>
+
+                            <p class="services__modal-info">
+                                Project :
+                            </p>
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Automation Website Keagenan (UFT)
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Automation Mobile Banking (UFT)
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Automation API Management (UFT)
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Automation Website Digisales (UFT)
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Automation Website Bni Credit Card (UFT)
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Automation Mobile SMS Menu (UFT)
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Automation Mobile Keagenan (UFT)
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <div class="serv">
+                        <h3 class="services__title">Application <br> Developer</h3>
+
+                        <span class="services__button">
+                            See More <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
+                    </div>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Application Developer</h3>
+                            <h5 class="services__modal-title">PT. Mitra Integrasi Informatika</h5>
+                            <h5 class="services__modal-title" style="text-align: center;">Application Developer</h5>
+
+                            <p class="services__modal-description">
+                                June 2020 – February 2021
+                            </p>
+
+                            <p class="services__modal-info">
+                                Site PT. BANK NEGARA INDONESIA Pejompongan</br>
+                                Project :
+                            </p>
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Development TQCApp on Scenario Test Menu (PHP, CI)
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Daily Report Monitoring TQCApp (scheduler, python)
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <div class="serv">
+                        <h3 class="services__title">Junior <br> Programmer</h3>
+
+                        <span class="services__button">
+                            See More <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
+                    </div>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Junior Programmer</h3>
+                            <h5 class="services__modal-title">PT.PLN (Persero) Distribution of Central Java & DIY</h5>
+                            <h5 class="services__modal-title" style="text-align: center;">Junior Programmer</h5>
+
+                            <p class="services__modal-description">
+                                April 2018 – July 2018
+                            </p>
+
+                            <p class="services__modal-info">
+                                I'm an Intern at PT. PLN (Persero) Distribution of Central Java & DIY. It focuses on Building Source for multiplatform which helps Client to create Source based on their request.</br></br>
+                                Job description :
+                            </p>
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Collecting data and processing data
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Script writing using xamarin product
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Lead a team of 5 people
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <h2 class="section__title">My Skill</h2>
+
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">QA Automation</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Open Text UFT</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Katalon</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Selenium</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Maestro</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">MagicPod</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Sikulix</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Programming language</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">VB Script</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Java</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Groovy</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">PHP</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">MySQL</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <h2 class="section__title">My Education</h2>
+
+            <div class="testimonial__container container swiper">
+                <div>
+                    <div class="testi__card">
+                      <div class="testi__row">
+                        <img src="assets/img/udinus.jpg" alt="Udinus" class="testi__img" width="128" height="128">
+                        
+                        <div class="testi__text">
+                          <h3 class="testi__name">Universitas Dian Nuswantoro</h3>
+                          <p class="testi__description">
+                            Semarang, Jawa Tengah<br>
+                            Bachelors’ degree, Informatics Engineering<br>
+                            GPA : 3,26 of 4.00
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="testi__card">
+                      <div class="testi__row">
+                        <img src="assets/img/tb.jpg" alt="Terbang" class="testi__img" width="128" height="128">
+                        
+                        <div class="testi__text">
+                          <h3 class="testi__name">Terang Bangsa Christian Semarang</h3>
+                          <p class="testi__description">
+                            Semarang, Jawa Tengah</br>
+                            Vocational High School</br>
+                            Television broadcasting technology
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--=============== SERVICES ===============-->
+        <section class="testimonial section">
+            <h2 class="section__title">My Certification</h2>
+
+            <div class="testimonial__container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial__card swiper-slide">
+                        <p class="testimonial__description">
+                            RPA Developer Foundation
+                        </p>
+                    </div>
+                    <div class="testimonial__card swiper-slide">
+                        <p class="testimonial__description">
+                            Certified Application Security Engineer - .NET
+                        </p>
+                    </div>
+                    <div class="testimonial__card swiper-slide">
+                        <p class="testimonial__description">
+                            ISTQB® Certified Tester Foundation Level
+                        </p>
+                    </div>
+                    <div class="testimonial__card swiper-slide">
+                        <p class="testimonial__description">
+                            ISTQB® Certified Tester Foundation Level - Agile Tester
+                        </p>
+                    </div>
+                    <div class="testimonial__card swiper-slide">
+                        <p class="testimonial__description">
+                            Api testing with katalon
+                        </p>
+                    </div>
+                    <div class="testimonial__card swiper-slide">
+                        <p class="testimonial__description">
+                            Web UI Testing With Katalon: Low-code Journey
+                        </p>
+                    </div>
+                    <div class="testimonial__card swiper-slide">
+                        <p class="testimonial__description">
+                            Pioneering Generative AI in Test Automation with Katalon
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+
+        <!--=============== WORK ===============-->
+        <section class="work section" id="work">
+            <span class="section__subtitle">My Portfolio</span>
+            <h2 class="section__title">Recent Works</h2>
+
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter='all'>All</span>
+                <span class=" work__item" data-filter='.web'>Web</span>
+                <span class=" work__item" data-filter='.movil'>Mobile</span>
+                <span class=" work__item" data-filter='.design'>Other</span>
+            </div>
+
+            <div class="work__container container grid">
+                <div class="work__card mix web">
+                    <img src="assets/img/bniagen.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>Keagenan (UFT)</h3>
+                </div>
+                <div class="work__card mix design">
+                    <img src="assets/img/work1.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Mail Delivery </br>Scheduler TQCAPPS</h3>
+                </div>
+                <div class="work__card mix design">
+                    <img src="assets/img/bni.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">API Management (UFT)</h3>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/bni.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>Siska (UFT)</h3>
+                </div>
+                <div class="work__card mix movil">
+                    <img src="assets/img/bnisms.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Mobile </br>SMS Menu (UFT)</h3>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/bnicc.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>BNI CreditCard (UFT)</h3>
+                </div>
+
+                <div class="work__card mix web">
+                    <img src="assets/img/digisales.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website Digisales and </br>Mobile WebView (UFT)</h3>
+                </div>
+                <div class="work__card mix design">
+                    <img src="assets/img/work2.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">TQCAPPS Dashboard</h3>
+                </div>
+                <div class="work__card mix movil">
+                    <img src="assets/img/bniagen.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Mobile </br>Keagenan (UFT)</h3>
+                </div>
+                <div class="work__card mix movil">
+                    <img src="assets/img/bnicc.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Mobile </br>BNI CreditCard (UFT)</h3>
+                </div>
+
+                <div class="work__card mix movil">
+                    <img src="assets/img/bnimbank.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Mobile </br>Banking (UFT)</h3>
+                </div>
+                <div class="work__card mix movil">
+                    <img src="assets/img/bnimbank.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Mobile </br>Banking (Katalon)</h3>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/bni.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>IBank Remittance (Katalon)</h3>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/bnidirect.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>Bni Direct (Katalon)</h3>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/bni.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website CXO Onboarding and </br>SSO (Katalon)</h3>
+                </div>
+
+                <div class="work__card mix movil">
+                    <img src="assets/img/bnicc.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Mobile </br>BNI CreditCard (Katalon)</h3>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/bni.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>DigiMS (Katalon)</h3>
+                </div>
+                <div class="work__card mix movil">
+                    <img src="assets/img/bniwondr.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Mobile </br>Wondr Bussiness (Katalon)</h3>
+                </div>
+                <div class="work__card mix movil">
+                    <img src="assets/img/bnisms.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Mobile </br>SMS Menu (Katalon)</h3>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/bni.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>GB Online (Katalon)</h3>
+                </div>
+
+                <div class="work__card mix web">
+                    <img src="assets/img/bni.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>DMS Sprint 1, 2 and 3 (Katalon)</h3>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/bnidirect.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>Bni Direct Reguler </br>(Reskining)(Katalon)</h3>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/bnidirect.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>Bni Direct Lite (Katalon)</h3>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/bni.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>Smart VA Portal (Katalon)</h3>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/bni.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>Portal Admin </br>Phase 1 and 2 (Katalon)</h3>
+                </div>
+
+                <div class="work__card mix web">
+                    <img src="assets/img/bni.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>LMS MVP 1 </br>Sprint 1, 2, 3 and 4 (Katalon)</h3>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/bni.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>BAMS-TAT (Katalon)</h3>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/bni.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>RMTools (Katalon)</h3>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/bni.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>ICONS Alternity (UFT)</h3>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/bni.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>Ti-Plus UFE (Katalon)</h3>
+                </div>
+
+                <div class="work__card mix web">
+                    <img src="assets/img/bni.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>Ti-Plus SFE (Katalon)</h3>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/bni.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>Ti-Plus GB Local (Katalon)</h3>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/bni.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>Ti-Plus Import (Katalon)</h3>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/digisales.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>Digisales Portal </br>Phase 4B and 5B (Katalon)</h3>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/digisales.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>Digisales Generalis </br>Mobile Browser </br>Phase 4B and 5B (Katalon)</h3>
+                </div>
+
+                <div class="work__card mix web">
+                    <img src="assets/img/digisales.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>Digisales Generalis Mobile Apk </br>Phase 4B and 5B (Katalon)</h3>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/digisales.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>Digisales FTE Mobile Apk </br>Phase 4B and 5B (Katalon)</h3>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/bni.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>LMS MVP 2 </br>Sprint 1 (Katalon)</h3>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/bni.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>GFX (UFT)</h3>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/bnidirect.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>Cash Management </br>Reguler (Katalon)</h3>
+                </div>
+
+                <div class="work__card mix web">
+                    <img src="assets/img/bnidirect.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>Cash Management Lite (Katalon)</h3>
+                </div>
+                <div class="work__card mix design">
+                    <img src="assets/img/bni.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Api Gateway </br>(FSCM, OGP V1-V4, </br>Sharing Biller) (Katalon)</h3>
+                </div>
+                <div class="work__card mix movil">
+                    <img src="assets/img/bni.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Mobile </br>BNI Move (Katalon)</h3>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/bni.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Website </br>CX COMM (Katalon)</h3>
+                </div>
+                <div class="work__card mix design">
+                    <img src="assets/img/work2.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">TESSA Dashboard</h3>
+                </div>
+                <div class="work__card mix design">
+                    <img src="assets/img/work1.jpg" alt="" class="work__img" width="128" height="128">
+                    <h3 class="work__title">Mail Delivery </br>Scheduler TESSA</h3>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== TESTIMONIALS ===============-->
+        <section class="testimonial section">
+            <!--<span class="section__subtitle">My clients say</span>-->
+            <h2 class="section__title">Testimonials</h2>
+
+            <div class="testimonial__container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial__card swiper-slide">
+                        <img src="https://media.licdn.com/dms/image/v2/D5635AQH_TPG_w5ZiWQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1727657867110?e=1749913200&v=beta&t=c_PJ8C3gMY5ap4GPT2A4E7K4xIhjaw6eVttGVw1bXfM" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Marchy Tio</h3>
+                        <p class="testimonial__description">
+                            Thomas is an excellent Test Automation Engineer! 🔥 Super skilled, innovative, and great at communicating with team members.
+                        </p>
+                    </div>
+
+                    <!--<div class="testimonial__card swiper-slide">
+                        <img src="https://media.licdn.com/dms/image/v2/C5103AQGLOYdC5OTluQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1556864963723?e=1754524800&v=beta&t=w7KWdInlxeSgYwSgYseh5cs5OUXpEGDQ3PjKFNDCEg4" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Silvester Kevin</h3>
+                        <p class="testimonial__description">
+                            A really good job, all aspects of the project were done well.
+                            Very creative and thoughtful. I was very impressed and would recommend this to anyone.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="https://media.licdn.com/dms/image/v2/C5603AQEYStTHSfyf2Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1651757900949?e=1754524800&v=beta&t=xHqnaeMDk9CL7lGqr7FiTORaeKzfdHqYgnFR4rfEmsg" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Mbincar Rukun</h3>
+                        <p class="testimonial__description">
+                            A really good job, all aspects of the project were done well.
+                            Very creative and thoughtful. I was very impressed and would recommend this to anyone.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="https://media.licdn.com/dms/image/v2/C5603AQH8ACVEUVZiuA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1608462153760?e=1754524800&v=beta&t=KkfqcWaBW15wJewBbx9rzSs5CRiv8Hm51eT_dK5PWVE" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Marinda Ika</h3>
+                        <p class="testimonial__description">
+                            A really good job, all aspects of the project were done well.
+                            Very creative and thoughtful. I was very impressed and would recommend this to anyone.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQFOYnxsCkOVHw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726982735614?e=1754524800&v=beta&t=teRIUh2s_0qVDWVPHdhdytT_l0PHP0eidmE1ItA4QDU" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Dio Setiawan</h3>
+                        <p class="testimonial__description"> 
+                            A really good job, all aspects of the project were done well.
+                            Very creative and thoughtful. I was very impressed and would recommend this to anyone.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="https://media.licdn.com/dms/image/v2/C5103AQFMsuBF4IMHQw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1532606546883?e=1754524800&v=beta&t=wZCIl2rc5FzzqTeBOPYBltF4ta5p2kgmEDLFbs1a2aw" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Putri Purwiranda</h3>
+                        <p class="testimonial__description">
+                            A really good job, all aspects of the project were done well.
+                            Very creative and thoughtful. I was very impressed and would recommend this to anyone.
+                        </p>
+                    </div> -->
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="https://media.licdn.com/dms/image/v2/C5603AQHpSFOTlgnvRA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1646797141590?e=1754524800&v=beta&t=Ilzu6UdAv2AUjemsVI5Ee2G_mp7VGhQE-tSqar1njIk" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Hamdani Abdullah</h3>
+                        <p class="testimonial__description">
+                            Great at automation, sociable, and humble. I was very impressed and would recommend this to anyone.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <sapn class="section__subtitle">Get in touch</sapn>
+            <h3 class="section__title">Contact Me</h3>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title contact__title-info">Talk to me</h3>
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class='bx bx-mail-send contact__card-icon'></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">thomasgunawannn@gmail.com</span>
+
+                            <a href="mailto:thomasgunawannn@gmail.com" target="_blank" class="contact__button">
+                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-whatsapp contact__card-icon'></i>
+                            <h3 class="contact__card-title">Whatsapp</h3>
+                            <span class="contact__card-data">+6285156341089</span>
+
+                            <a href="https://api.whatsapp.com/send?phone=+6285156341089&text=Hey there!" target="_blank"
+                                class="contact__button">
+                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-linkedin contact__card-icon'></i>
+                            <h3 class="contact__card-title">Linkedin</h3>
+                            <span class="contact__card-data">thomas gunawan sardjono</span>
+
+                            <a href="https://www.linkedin.com/in/thomasgunawannn/" target="_blank" class="contact__button">
+                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title contact__title-form">Write Me your Message</h3>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Name</label>
+                            <input type="text" placeholder="Enter name" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Mail</label>
+                            <input type="text" placeholder="Enter email" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label for="" class="contact__form-tag">Message</label>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Write your Message"
+                                class="contact__form-input "></textarea>
+                        </div>
+
+
+                        <button class="button">
+                            Send Message
+                        </button>
+                    </form>
+
+                </div>
+
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Thomas Gunawan</h1>
+
+            <ul class="footer__list">
+
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Home</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#work" class="footer__link">Work</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#contact" class="footer__link">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <li class="footer__social-item">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://www.linkedin.com/in/thomasgunawannn/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-linkedin footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram footer__social-icon'></i>
+                    </a>
+                </li>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; <span id="year"></span>. All rights reserved.
+            </span>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+
+    <script>
+      const yearNow = new Date().getFullYear();
+      const yearDiff = yearNow - 2021;
+      document.getElementById("yearDiff").textContent = yearDiff;
+    </script>
+
+    <script>
+      const thomasProject = 45;
+      document.getElementById("thomasProject").textContent = thomasProject;
+    </script>
+
+    <script>
+    // Menampilkan tahun saat ini secara otomatis
+    document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
